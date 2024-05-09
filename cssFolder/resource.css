@@ -1,0 +1,62 @@
+
+/* Author: Abdou Sylla
+Create Date: Mar 29th, 2024 */
+
+
+/* ***********************[ Style the Resource Line Height ]*********************** */
+#resource {
+    line-height: 2.5em;
+}
+
+#resource ul li {
+    font-weight: bold;
+    margin: 14px; 
+    font-size: 20px;   
+}
+
+#resource ul {  /* Unorder List */
+list-style: none;      
+}
+#resource ol, ul{ /* order and Unorder List  */
+    margin-left: 40px;
+}
+#resource ol li { /* order List */
+        margin: 14px; 
+        font-size: 18px;   
+    }
+
+#resource h2 { /* Stype the h2 */
+    padding: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+/* ***********************[ Media Query ]*********************** */
+@media (max-width: 600px) {
+    #resource {
+        line-height: 1.5em;
+    }
+    #resource h2 {
+        padding: 0;
+        list-style: none;
+        font-weight: bold;
+        font-size: 24px;   
+    }
+    #resource ul li {
+        margin: 10px; 
+    }
+    #resource ol li {
+        margin: 14px; 
+        font-size: 18px;   
+    }
+    #resource ul {
+        list-style: none;
+    }
+    #resource {
+    font-size: 24px;   
+}
+  }
+  /* ***********************[ END Of Media Query ]*********************** */

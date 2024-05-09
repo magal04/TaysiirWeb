@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+    Author:Abdou Sylla
+    Date: Mar 25, 2024 
+    Last Modification History: 
+    Mar 29,2024: Create Header, Footer
+    Apr 19, 2024: Form
+-->
+<!-- Tested in chrome, safari ,firefox,and  microsoft edge -->
+<!-- Page displayed same on all tested browsers -->
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Plaza - Account</title>
+    <!-- <link type="text/css" rel="stylesheet" href="../final.css"> -->
+        <!-- <link type="text/css" rel="stylesheet" href="./cssFolder/reset.css"> -->
+
+    <link type="text/css" rel="stylesheet" href="./cssFolder/bookPlaza.css">
+    <link type="text/css" rel="stylesheet" href="./cssFolder/account.css">
+      </head>
+
+
+  <body>
+<header>
+    <a href="bookPlaza.html" ><img id="logo" src="logo.gif" alt="Book Plaza Logo" ></a>
+    <p>Discover Your Next Chapter at Book Plaza</p>
+
+
+<nav>
+    <ul>
+        <li><a href="bookPlaza.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resource.html">Resource</a></li>
+        <li><a href="account.html" class="active">Account</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
+<!-- *********************[ Form Action]*********************  -->
+
+<section class="books">
+    
+    <form action="action_page.php" >
+    <fieldset>
+        <legend><h1>Sign Up</h1></legend>
+        <div class="tableRow">
+            <label for ="email"> Email:</label>
+            <input type="text" id="email" name="email" value="" placeholder="Enter Email" required>
+        </div>
+        <div class="tableRow">
+            <label for ="password"> Password:</label>
+            <input type="password" id="password" name="lastname" value="" placeholder="Enter Your Password" required>
+        </div>
+         <button type="submit" value="Send" class="button">Sign Up</button>
+
+    </fieldset>
+    </form>
+</section>
+
+<footer>
+    <ul>
+        <li>Phone: <a href="tel:8001231122">(800) 123 11 22</a></li>
+        <li>Email: <a href = "mailto:bookplaza@gamil.com" title="open on gmail">bookplaza@gmail.com</a> </li>
+        <li>&copy; 2024 Book Plaza</li>
+    </ul>
+</footer>
+</body>
+</html>

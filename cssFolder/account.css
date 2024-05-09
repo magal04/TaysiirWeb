@@ -1,0 +1,84 @@
+/* Author: Abdou Sylla
+Create Date: Mar 29th, 2024 */
+
+ /* Centerelize the h1 and p */
+ h1, p { 
+    text-align: center ;
+}
+/* ***********************[ Form ]*********************** */
+form {   /* Styling the form */
+    display: table;
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    color: #034f0f;   
+    width: 80%; 
+}
+input
+{ 
+    font-weight: bold;
+    border-radius:4px;
+    font-size: 14px;
+}
+input:focus
+{  
+    outline: 1px solid #2f8b3e;
+    /* background-color: #008917; */
+    font-size: medium;
+}
+
+/* ***********************[Buttons]*********************** */
+button[type=submit] {   
+    display: block;
+   cursor: pointer;
+   margin-left: auto; 
+   margin-right: auto;
+}
+div.tableRow {/* displying the the class  as table Row*/
+   display: table-row; 
+}
+
+fieldset { 
+   margin: 20px;
+}
+legend { 
+    text-align: center;
+} 
+
+div.tableRow >label { 
+    display: table-cell;
+    padding: 10px;
+}
+
+div.tableRow > input { /*  set the padding size for input*/
+    padding: 4px;   
+}
+
+/* ***********************[ Media Query ]*********************** */
+@media only screen and (max-width: 600px) {
+   form {
+       width: 50px;
+   }
+
+   form textarea { /* set width and height for textarea */ 
+    width: 250px;
+    height: 100px; 
+    }
+    form 
+    {   /* Styling the form */
+    display: table;
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    color: #034f0f;   
+    width: 80%; 
+    }
+
+    button[type=submit] 
+    {   
+    display: block;
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: auto;
+    }
+
+}
+/* ***********************[ END Of Media Query ]*********************** */

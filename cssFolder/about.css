@@ -1,0 +1,87 @@
+/* Author: Abdou Sylla
+Create Date: Mar 29th, 2024 */
+
+/* ***********************[ Testimonials, OurMission ]*********************** */
+
+.testimonials, .ourMisssion {
+    margin: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ***********************[ Testimonials, OurMission header]*********************** */
+.testimonials h2, .ourMisssion h2 {
+    padding: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+    /* background-color: #4f9334; */
+    border-radius: 8px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+/* ***********************[ Testimonials, OurMission p]*********************** */
+.ourMisssion p {
+font-size: large;
+margin: 20px;
+line-height: 2.5em;
+}
+/* ***********************[ Slogan]*********************** */
+.slogan {
+    font-style:italic;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 20px;
+} 
+
+  /* Style the container*/
+  .container1 {
+    border: 2px solid #9b9292c8;
+    background-color: #eee;
+    background-color:#d0b25d;
+    border-radius: 4px;
+    padding: 14px;
+    margin: 14px 0;
+  }
+  
+  /* Clear floats after containers */
+  .container1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  /* Float images inside the container to the left.*/
+  .container1 img {
+    float: left;
+    margin-right: 22px;
+    border-radius: 50%;
+  }
+  .container1 p {
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  p span {
+    font-weight: bold;
+  }
+
+  /* ***********************[ Media Query]*********************** */
+
+  @media only screen and (min-width: 600px) {
+    .container1 {
+      text-align: center;
+    }
+  
+    .container1 img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+    .ourMisssion p {
+        font-size: medium;
+        margin: 20px;
+        line-height: 2em;
+    }
+  }
+
+  /* ***********************[ END OF Media Query]*********************** */

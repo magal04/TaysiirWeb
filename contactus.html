@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 
+    Author:Abdou Sylla
+    Date: Mar 25, 2024 
+    Last Modification History: 
+    Mar 29,2024: Create Header, Footer
+    Apr 20, 2024: Form
+-->
+<!-- Tested in chrome, safari ,firefox,and  microsoft edge -->
+<!-- Page displayed same on all tested browsers -->
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Book Plaza</title>
+    <!-- <link type="text/css" rel="stylesheet" href="./cssFolder/reset.css"> -->
+    <link type="text/css" rel="stylesheet" href="./cssFolder/bookPlaza.css">
+    <link type="text/css" rel="stylesheet" href="./cssFolder/contactUs.css">
+
+
+    <style>
+
+        #Contact_Info_Table
+        {
+            border-collapse: collapse;
+            width: 90%;
+            height: 200px;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #Contact_Info_Table td,th
+        {
+            border: 2px solid #334135;
+            padding: 4px;
+        }
+        #Contact_Info_Table th
+        {
+            color: #034f0f;
+        }
+    </style>
+    
+  </head>
+  <body>
+        <header>
+        <div class="logo"><a href="bookPlaza.html" ><img id="logo" src="logo.gif" alt="logo"></a>
+        <p>Discover Your Next Chapter at Book Plaza</p>
+    </div>
+<nav id="nav-menu">
+    <ul>
+        <li><a href="bookPlaza.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resource.html">Resource</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contactus.html">Contact Us</a></li>
+    </ul>
+</nav>        
+</header>  
+<!-- *********************[ Books Section ]*********************  -->
+
+<section class="books">
+    
+    <form id="contactUsForm" action="action_page.php" >
+    <fieldset>
+        <legend><h1>Get in Touch With Us</h1></legend>
+            
+            <p>We're love to answer any question you may have</p>
+
+        <div class="tableRow">
+            <label for ="fname"> First Name:</label>
+            <input type="text" id="fname" name="firstname" value="" placeholder="Your First Name" required>
+        </div>
+        <div class="tableRow">
+            <label for ="lname"> Last Name:</label>
+            <input type="text" id="lname" name="lastname" value="" placeholder="Your Last Name" required>
+        </div>
+        <div class="tableRow">
+            <label for ="email"> Email:</label>
+            <input type="text" id="email" name="email" value="" placeholder="Enter Email" required>
+        </div>
+        <div class="tableRow">
+            <label for ="message"> Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your thought" required></textarea>
+            <!-- <input type= "submit" value= "Send" class="button"> -->
+            <button type="submit" value="Send" class="button">Send</button>
+         </div>
+
+    </fieldset>
+    </form>
+</section>
+
+    <!-- Company contact info -->
+    <table id="Contact_Info_Table">
+        <tr>
+            <th colspan="4">Contact Information</th>
+        </tr>
+        <tr>
+            <th>Company</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Book Plaza</td>
+            <td>123 West Street,Indianapolis, IN, 46262</td>
+            <td><a href="tel:8001231122">(800) 123 11 22</a></td>
+            <td><a href="mailto:bookplaza@gmail.com">bookplaza@gmail.com</a></td>
+        </tr>
+    </table>
+
+
+<footer>
+    <ul>
+        <li>Phone: <a href="tel:8001231122">(800) 123 11 22</a></li>
+        <li>Email: <a href = "mailto:bookplaza@gamil.com" title="open on gmail">bookplaza@gmail.com</a> </li>
+        <li>&copy; 2024 Book Plaza</li>
+    </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Author: Abdou Sylla
+Create Date: Mar 29th, 2024 */
+
+
+/* ***********************[ Blog ]*********************** */
+.blog {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #4f9334;
+    width: 60%;
+    margin-bottom: 20px;
+}
+/* ***********************[ Blog Header ]*********************** */
+.blog h2{
+    padding: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+    background-color: #4f9334;
+    border-radius: 8px;
+}
+
+/* ***********************[ Post]*********************** */
+  /* Style the container */
+  .post {
+    border: 2px solid #9b9292c8;
+    background-color:#d0b25d;
+    border-radius: 4px;
+    padding: 14px;
+    margin: 14px 0;
+    display: block;
+  }
+  /* Clear floats after containers */
+  .post::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* ***********************[ Post Image ]*********************** */
+  /* Float images inside the container to the left.*/
+  .post img {
+    background-image: url();
+    background-color: #4f9334;
+    float: left;
+    margin-right: 22px;
+  }
+  .post p {
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  /* ***********************[  Read More ]*********************** */
+  .more {display: none;}   /* Hide */
+
+  /* ***********************[ Media Query ]*********************** */
+  @media (max-width: 600px) {
+    .post {
+      text-align: center;
+    }
+  
+    .post img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+    .ourMisssion p {
+        font-size: medium;
+        margin: 20px;
+        line-height: 2em;
+    }
+
+    .blog {
+      padding: 4px;
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 2.1em;
+    
+  }
+  .blog h2{
+    padding: 4px;
+    text-align: center;
+    background-color: #4f9334;
+    border-radius: 8px;
+}
+  
+  }
+
+/* ***********************[ END Of Media Query ]*********************** */
