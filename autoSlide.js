@@ -1,6 +1,18 @@
-let slideIndex = 1;
+  let slideIndex = 1;
   let timer;
-  showSlides(slideIndex);
+
+  const slides = document.getElementsByClassName("slides");
+  const dotsContainer = document.getElementById("dots");
+
+  // Generate dots dynamically
+  for (let i = 0; i < slides.length; i++) {
+    let dot = document.createElement("span");
+    dot.className = "dot";
+    dot.onclick = () => currentSlide(i + 1);
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = document.getElementsByClassName("dot");
 
   function plusSlides(n) {
     clearTimeout(timer);
@@ -13,46 +25,45 @@ let slideIndex = 1;
   }
 
   function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
+    clearTimeout(timer);
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
 
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
 
-    for (i = 0; i < dots.length; i++) {
+    for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
 
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 
-    timer = setTimeout(() => plusSlides(1), 3000); // Auto slide
+    timer = setTimeout(() => plusSlides(1), 3000);
   }
 
+  showSlides(slideIndex);
+
   // Pause on hover
-const slideshow = document.getElementById("slideshow");
-slideshow.addEventListener("mouseenter", () => clearTimeout(timer));
-slideshow.addEventListener("mouseleave", () => showSlides(slideIndex));
+  const slideshow = document.getElementById("slideshow");
+  slideshow.addEventListener("mouseenter", () => clearTimeout(timer));
+  slideshow.addEventListener("mouseleave", () => showSlides(slideIndex));
 
-// Swipe for mobile
-let touchStartX = 0;
-let touchEndX = 0;
+  // Swipe for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
 
-slideshow.addEventListener("touchstart", e => {
-  touchStartX = e.changedTouches[0].screenX;
-}, false);
+  slideshow.addEventListener("touchstart", e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
 
-slideshow.addEventListener("touchend", e => {
-  touchEndX = e.changedTouches[0].screenX;
-  handleSwipe();
-}, false);
+  slideshow.addEventListener("touchend", e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
 
-function handleSwipe() {
-  if (touchEndX < touchStartX - 50) plusSlides(1);
-  if (touchEndX > touchStartX + 50) plusSlides(-1);
-}
+  function handleSwipe() {
+    if (touchEndX < touchStartX - 50) plusSlides(1);
+    if (touchEndX > touchStartX + 50) plusSlides(-1);
+  }
