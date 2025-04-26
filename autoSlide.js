@@ -40,7 +40,7 @@
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 
-    timer = setTimeout(() => plusSlides(1), 3000);
+    timer = setTimeout(() => plusSlides(1), 4000);
   }
 
   showSlides(slideIndex);
