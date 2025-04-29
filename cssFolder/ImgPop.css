@@ -10,12 +10,13 @@
   }
 
   .thumbnail {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
     cursor: pointer;
     border-radius: 14px;
     transition: transform 0.3s ease;
+    border: 2px solid #006400;
   }
 
   .thumbnail:hover {
