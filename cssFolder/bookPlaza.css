@@ -339,3 +339,10 @@ a:active {
         margin-bottom: 40px;
     }
 } */
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    user-select: none;
+    pointer-events: none;
+  }
