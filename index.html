@@ -331,9 +331,9 @@
 </section>
 <div id="pop_image">
 <!-- Many small images -->
-  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-0.JPG" alt="Image 1" class="thumbnail">
-  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-1.JPG" alt="Image 2" class="thumbnail">
-  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-2.JPG" alt="Image 3" class="thumbnail">
+  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-0.JPG" alt="Image 1" class="thumbnail" data-caption="This is photo 1">
+  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-1.JPG" alt="Image 2" class="thumbnail" data-caption="This is photo 1" >
+  <img src="M_XIDMA_IMG/MX_T_0-18/MX000-2.JPG" alt="Image 3" class="thumbnail" data-caption="This is photo 1">
   <img src="M_XIDMA_IMG/MX_T_0-18/MX000-3.JPG" alt="Image 4" class="thumbnail">
   <img src="M_XIDMA_IMG/MX_T_0-18/MX000-4.JPG" alt="Image 5" class="thumbnail">
   <img src="M_XIDMA_IMG/MX_T_0-18/MX000-5.JPG" alt="Image 6" class="thumbnail">
@@ -368,8 +368,13 @@
 
 <!-- Hidden popup -->
 <div class="overlay" id="overlay">
-  <img src="" alt="Full Size" id="popupImage">
-</div>
+      <!-- /* Style the Next/Prev buttons for the popup?  */ -->
+    <img src="" alt="Full Size" id="popupImage">
+    <button id="prevBtn" class="nav-btn">&larr;</button>     <!-- /*  the Next/Prev buttons for the popup?  */ -->
+    <button id="nextBtn" class="nav-btn">&rarr;</button>     <!-- /*  the Next/Prev buttons for the popup?  */ -->
+    <button id="closeBtn" class="close-btn">&times;</button>     <!-- clode x -->
+  </div>
+  
 </div>
 <footer>
     <ul>

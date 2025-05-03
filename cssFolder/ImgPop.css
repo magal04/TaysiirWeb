@@ -47,3 +47,41 @@
   .overlay.show {
     display: flex;
   }
+
+  /* Style the Next/Prev buttons for the popup?  */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  #prevBtn {
+    left: 30px;
+  }
+  
+  #nextBtn {
+    right: 30px;
+  }
+  /* Close X button */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
