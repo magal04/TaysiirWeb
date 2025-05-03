@@ -194,7 +194,7 @@ a:active {
 
     /* ***********************[ Media Query-Header ]*********************** */
 
-    /* header {
+    header {
         text-align: center;
     }
     header p {
@@ -202,10 +202,10 @@ a:active {
         font-size: medium;
         float: none;
         margin-top: 0px;
-        } */
+        }
             /* ***********************[ Media Query-Nav Bar ]*********************** */
 
-    /* nav {
+    nav {
         width: 100%;
     }
     nav ul {
@@ -223,10 +223,10 @@ a:active {
       display: block;
       margin: 0;
       padding: 0px 14px ;
-    } */
+    }
 
         /* ***********************[ Media Query-Buttons ]*********************** */
-/* .button{
+.button{
         width: 30%;
         color: #006400;
         text-align: center;
@@ -238,9 +238,9 @@ a:active {
         border-radius: 10px;
         background-color: #d0b25d;
         cursor: pointer;
-    } */
+    }
 /* ***********************[ Media Query-BookType, Fiction, Non_Fiction ]*********************** */
-/* .bookTypeContainer {    
+.bookTypeContainer {    
 
         box-sizing: border-box;
         overflow:auto;
@@ -269,14 +269,16 @@ a:active {
         font-weight: bolder;
         margin-bottom: 40px;
     }
-} */
+
     
 /* ***********************[ END Of Media Query ]*********************** */
 /* ***********************[ Media Query-Header ]*********************** */
+
+/*********************
 @media screen and (max-width: 600px) {
 
     /* ***********************[ Media Query-Header ]*********************** */
-    header {
+    /* header {
         text-align: center;
     }
     header p {
@@ -284,10 +286,10 @@ a:active {
         font-size: medium;
         float: none;
         margin-top: 0px;
-    }
+    } */
 
     /* ***********************[ Media Query-Nav Bar ]*********************** */
-    nav {
+    /* nav {
         width: 100%;
     }
     nav ul {
@@ -304,10 +306,10 @@ a:active {
         display: block;
         margin: 0;
         padding: 0px 14px;
-    }
+    } */
 
     /* ***********************[ Media Query-Buttons ]*********************** */
-    .button {
+    /* .button {
         width: 30%;
         color: #006400;
         text-align: center;
@@ -319,38 +321,38 @@ a:active {
         border-radius: 10px;
         background-color: #d0b25d;
         cursor: pointer;
-    }
+    } */
 
     /* ***********************[ Media Query-BookType, Fiction, Non_Fiction ]*********************** */
-    .bookTypeContainer {
+    /* .bookTypeContainer {
         box-sizing: border-box;
         overflow: auto;
         white-space: nowrap;
         padding-bottom: 18px;
         display: flex;  /* Flex layout to display image and text side by side */
-        gap: 15px;  /* Space between image and text */
-        flex-direction: column;  /* Change to column layout on smaller screens */
-        align-items: center;  /* Center-align the content */
-    }
+        /* gap: 15px;  Space between image and text */
+        /* flex-direction: column;  Change to column layout on smaller screens */
+        /* align-items: center;  Center-align the content */
+    /* } */ 
 
-    .bookTypeContainer img {
-        width: 140px;
-        height: 220px;
-        border-radius: 10px;
+    /* .bookTypeContainer img { */
+        /* width: 140px; */
+        /* height: 220px; */
+        /* border-radius: 10px; */
         /* Adjust image size for small screens */
-    }
-
+    /* } */
+/* 
     .bookType h2 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #006400;
         padding: 0;
         padding-bottom: 18px;
-        font-weight: bolder;
-        font-size: 18px;  /* Slightly smaller font size on smaller screens */
-        text-align: center;  /* Center-align the heading */
-    }
+        font-weight: bolder; */
+        /* font-size: 18px;  /* Slightly smaller font size on smaller screens */
+        /* text-align: center;  Center-align the heading */
+    /* } */
 
-    .books h1 {
+    /* .books h1 {
         text-align: center;
         padding: 0;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -358,4 +360,4 @@ a:active {
         font-weight: bolder;
         margin-bottom: 40px;
     }
-}
+} */
