@@ -168,32 +168,8 @@ a:active {
         list-style: none;
     }
 
-    
 /* ***********************[ Media Query ]*********************** */
-@media (max-width: 768px) {  /* For tablet or medium-sized screens */
-    .bookTypeContainer {
-        flex-direction: column; /* Stack the elements vertically */
-        align-items: center; /* Center align the content */
-        text-align: center; /* Center align the text */
-    }
-
-    .bookTypeContainer img {
-        width: 100%;  /* Make the image take full width of the container */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .bookDetails {
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 1.5em; /* Adjust the size of the heading */
-    }
-}
-
 @media screen and (max-width: 600px) {
-
-
     /* ***********************[ Media Query-Header ]*********************** */
 
     header {
@@ -260,7 +236,7 @@ a:active {
         padding: 0;
         padding-bottom: 18px;
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 18px;
     }
     
 .books h1 {
@@ -269,7 +245,7 @@ a:active {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 24px;
         font-weight: bolder;
-        margin-bottom: 40px;
+        margin-bottom: 6px;
     }}
 
     
