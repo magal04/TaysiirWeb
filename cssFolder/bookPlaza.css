@@ -167,6 +167,8 @@ a:active {
     footer li {
         list-style: none;
     }
+
+    
 /* ***********************[ Media Query ]*********************** */
 @media (max-width: 768px) {  /* For tablet or medium-sized screens */
     .bookTypeContainer {
