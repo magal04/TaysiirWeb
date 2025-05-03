@@ -13,8 +13,7 @@
   // overlay.addEventListener('click', () => {
   //   overlay.classList.remove('show');
   // });
-
-  // <!-- /* Style the Next/Prev buttons for the popup?  */ -->
+/* ***********************[ Declaration ]*********************** */
   const thumbnails = document.querySelectorAll('.thumbnail');
   const overlay = document.getElementById('overlay');
   const popupImage = document.getElementById('popupImage');
@@ -30,7 +29,7 @@
     overlay.classList.add('show');
     currentIndex = index;
   }
-  
+    /* ***********************[ Thumbnail  ]*********************** */
   thumbnails.forEach((thumb, index) => {
     thumb.addEventListener('click', () => {
       showImage(index);
@@ -42,25 +41,25 @@
       overlay.classList.remove('show');
     }
   });
-  
+    /* ***********************[ Prev button ]*********************** */
   prevBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
     showImage(currentIndex);
   });
-  
+    /* ***********************[ Next button ]*********************** */
   nextBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     currentIndex = (currentIndex + 1) % thumbnails.length;
     showImage(currentIndex);
   });
-  // Close x botton
-closeBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  overlay.classList.remove('show');
+  /* ***********************[ Close X button ]*********************** */
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    overlay.classList.remove('show');
 });
 
-// Keyboard 
+/* ***********************[ Using Keyboard ]*********************** */
 document.addEventListener('keydown', function(e) {
   if (overlay.classList.contains('show')) {
     if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
