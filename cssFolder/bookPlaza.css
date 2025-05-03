@@ -9,20 +9,23 @@ Create Date: Mar 10th, 2024 */
 }
 
 /*  Typography Font Family*/
-@font-face {
+/* @font-face {
     font-family: Squids;
     src: url(../fonts/Squids/GameOfSquids.otf);
     src: url(../fonts/Squids/GameOfSquids.ttf);
+} */
+
+@font-face {
+    font-family: 'Squids';
+    src: url('../fonts/Squids/GameOfSquids.otf') format('opentype'),
+         url('../fonts/Squids/GameOfSquids.ttf') format('truetype');
 }
-/* new font fomily  for the Slogan */ 
-header p {
-    font-family: Squids, sans-serif;
-} 
+
 
 body {
     background-color: #dab654;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
+    font-size: 1rem;
     line-height: 1.6em;
     margin: 0;
     display: flex;
@@ -37,6 +40,7 @@ header {
 }
 /* Slogan */
 header p {
+    font-family: Squids, sans-serif;
     color: #006400;
     font-size: large;
     font-weight: bold;
@@ -110,7 +114,7 @@ a:active {
     }
     nav ul li {
         display: inline;    
-        padding: 0px 8px 0px 8px;
+        padding: 0px 8px;
         margin-top: 20px;
     }
     nav ul li a:link {
@@ -154,7 +158,7 @@ a:active {
 /* ***********************[ Footer ]*********************** */
 
     footer {
-        padding: 1px;
+        padding: 10px;
         text-align: center; 
         width: 100%;
         background-color: #4f9334;
@@ -164,12 +168,33 @@ a:active {
         list-style: none;
     }
 /* ***********************[ Media Query ]*********************** */
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {  /* For tablet or medium-sized screens */
+    .bookTypeContainer {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center align the content */
+        text-align: center; /* Center align the text */
+    }
+
+    .bookTypeContainer img {
+        width: 100%;  /* Make the image take full width of the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .bookDetails {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust the size of the heading */
+    }
+}
+
+/* @media screen and (max-width: 600px) { */
 
 
     /* ***********************[ Media Query-Header ]*********************** */
 
-    header {
+    /* header {
         text-align: center;
     }
     header p {
@@ -177,10 +202,10 @@ a:active {
         font-size: medium;
         float: none;
         margin-top: 0px;
-        }
+        } */
             /* ***********************[ Media Query-Nav Bar ]*********************** */
 
-    nav {
+    /* nav {
         width: 100%;
     }
     nav ul {
@@ -198,10 +223,10 @@ a:active {
       display: block;
       margin: 0;
       padding: 0px 14px ;
-    }
+    } */
 
         /* ***********************[ Media Query-Buttons ]*********************** */
-.button{
+/* .button{
         width: 30%;
         color: #006400;
         text-align: center;
@@ -213,16 +238,16 @@ a:active {
         border-radius: 10px;
         background-color: #d0b25d;
         cursor: pointer;
-    }
+    } */
 /* ***********************[ Media Query-BookType, Fiction, Non_Fiction ]*********************** */
-.bookType {    
+/* .bookTypeContainer {    
 
         box-sizing: border-box;
         overflow:auto;
         white-space:nowrap;
         padding-bottom: 18px;
     }
-.bookType img {
+.bookTypeContainer img {
         width: 140px;
         height: 220px;
         border-radius: 10px;
@@ -244,6 +269,93 @@ a:active {
         font-weight: bolder;
         margin-bottom: 40px;
     }
-}
+} */
     
 /* ***********************[ END Of Media Query ]*********************** */
+/* ***********************[ Media Query-Header ]*********************** */
+@media screen and (max-width: 600px) {
+
+    /* ***********************[ Media Query-Header ]*********************** */
+    header {
+        text-align: center;
+    }
+    header p {
+        color: #006400;
+        font-size: medium;
+        float: none;
+        margin-top: 0px;
+    }
+
+    /* ***********************[ Media Query-Nav Bar ]*********************** */
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        width: 100%;
+        padding: 0px;
+    }
+    nav ul li {
+        float: left;
+        padding: 0px 7px;
+        margin: 0px;
+    }
+    nav a {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 0px 14px;
+    }
+
+    /* ***********************[ Media Query-Buttons ]*********************** */
+    .button {
+        width: 30%;
+        color: #006400;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 4px 10px;
+        margin: 8px auto;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: #d0b25d;
+        cursor: pointer;
+    }
+
+    /* ***********************[ Media Query-BookType, Fiction, Non_Fiction ]*********************** */
+    .bookTypeContainer {
+        box-sizing: border-box;
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 18px;
+        display: flex;  /* Flex layout to display image and text side by side */
+        gap: 15px;  /* Space between image and text */
+        flex-direction: column;  /* Change to column layout on smaller screens */
+        align-items: center;  /* Center-align the content */
+    }
+
+    .bookTypeContainer img {
+        width: 140px;
+        height: 220px;
+        border-radius: 10px;
+        /* Adjust image size for small screens */
+    }
+
+    .bookType h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #006400;
+        padding: 0;
+        padding-bottom: 18px;
+        font-weight: bolder;
+        font-size: 18px;  /* Slightly smaller font size on smaller screens */
+        text-align: center;  /* Center-align the heading */
+    }
+
+    .books h1 {
+        text-align: center;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+}
