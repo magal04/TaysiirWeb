@@ -189,7 +189,7 @@ a:active {
     }
 }
 
-/* @media screen and (max-width: 600px) { */
+@media screen and (max-width: 600px) {
 
 
     /* ***********************[ Media Query-Header ]*********************** */
@@ -268,7 +268,7 @@ a:active {
         font-size: 24px;
         font-weight: bolder;
         margin-bottom: 40px;
-    }
+    }}
 
     
 /* ***********************[ END Of Media Query ]*********************** */
